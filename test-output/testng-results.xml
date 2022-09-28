@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-28T21:32:53 WAT" name="Default suite" finished-at="2022-09-28T21:32:59 WAT" duration-ms="6025">
+  <suite started-at="2022-09-28T22:39:17 WAT" name="Default suite" finished-at="2022-09-28T22:39:26 WAT" duration-ms="8567">
     <groups>
     </groups>
-    <test started-at="2022-09-28T21:32:53 WAT" name="Default test" finished-at="2022-09-28T21:32:59 WAT" duration-ms="6025">
-      <class name="com.herokuapp.restfulbooker.PartialUpdateBookingTests">
-        <test-method signature="partialUpdateBookingTest()[pri:0, instance:com.herokuapp.restfulbooker.PartialUpdateBookingTests@2ea227af]" started-at="2022-09-28T21:32:53 WAT" name="partialUpdateBookingTest" finished-at="2022-09-28T21:32:59 WAT" duration-ms="5959" status="PASS">
+    <test started-at="2022-09-28T22:39:17 WAT" name="Default test" finished-at="2022-09-28T22:39:26 WAT" duration-ms="8567">
+      <class name="com.herokuapp.restfulbooker.DeleteBookingTests">
+        <test-method signature="deleteBookingTest()[pri:0, instance:com.herokuapp.restfulbooker.DeleteBookingTests@2ea227af]" started-at="2022-09-28T22:39:17 WAT" name="deleteBookingTest" finished-at="2022-09-28T22:39:26 WAT" duration-ms="8500" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- partialUpdateBookingTest -->
-      </class> <!-- com.herokuapp.restfulbooker.PartialUpdateBookingTests -->
+        </test-method> <!-- deleteBookingTest -->
+      </class> <!-- com.herokuapp.restfulbooker.DeleteBookingTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
