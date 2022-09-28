@@ -5,6 +5,7 @@
     <classes>
       <class name="com.herokuapp.restfulbooker.GetBookingsIDWIthFilterExerciseTest">
         <methods>
+          <include name="setUp"/>
           <include name="getBookingsIDWIthFilterExerciseTest"/>
         </methods>
       </class> <!-- com.herokuapp.restfulbooker.GetBookingsIDWIthFilterExerciseTest -->
