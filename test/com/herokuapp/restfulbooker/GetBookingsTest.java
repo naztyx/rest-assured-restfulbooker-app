@@ -6,7 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class GetBookingsTest {
 	
@@ -14,8 +16,11 @@ public class GetBookingsTest {
 	
 	@Test
 	public void getBookingsIdWithoutFilterTest() {
+		
+		RequestSpecification rspec = new RequestSpecBuilder().setBaseUri(URL).build();
+		
 		//get booking id s response
-		Response response = RestAssured.get(URL);
+		Response response = RestAssured.given(rspec).get();
 		response.prettyPrint();
 		
 		//assert response is OK with response 200 statusCode

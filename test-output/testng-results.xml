@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-28T22:39:17 WAT" name="Default suite" finished-at="2022-09-28T22:39:26 WAT" duration-ms="8567">
+  <suite started-at="2022-09-28T23:16:20 WAT" name="Default suite" finished-at="2022-09-28T23:16:26 WAT" duration-ms="5907">
     <groups>
     </groups>
-    <test started-at="2022-09-28T22:39:17 WAT" name="Default test" finished-at="2022-09-28T22:39:26 WAT" duration-ms="8567">
-      <class name="com.herokuapp.restfulbooker.DeleteBookingTests">
-        <test-method signature="deleteBookingTest()[pri:0, instance:com.herokuapp.restfulbooker.DeleteBookingTests@2ea227af]" started-at="2022-09-28T22:39:17 WAT" name="deleteBookingTest" finished-at="2022-09-28T22:39:26 WAT" duration-ms="8500" status="PASS">
+    <test started-at="2022-09-28T23:16:20 WAT" name="Default test" finished-at="2022-09-28T23:16:26 WAT" duration-ms="5907">
+      <class name="com.herokuapp.restfulbooker.UpdateBookingTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.UpdateBookingTests@2f7c2f4f]" started-at="2022-09-28T23:16:20 WAT" name="setUp" finished-at="2022-09-28T23:16:21 WAT" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteBookingTest -->
-      </class> <!-- com.herokuapp.restfulbooker.DeleteBookingTests -->
+        </test-method> <!-- setUp -->
+        <test-method signature="updateBookingTests()[pri:0, instance:com.herokuapp.restfulbooker.UpdateBookingTests@2f7c2f4f]" started-at="2022-09-28T23:16:21 WAT" name="updateBookingTests" finished-at="2022-09-28T23:16:26 WAT" duration-ms="5216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBookingTests -->
+      </class> <!-- com.herokuapp.restfulbooker.UpdateBookingTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

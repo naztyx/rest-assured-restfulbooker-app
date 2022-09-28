@@ -1,14 +1,24 @@
 package com.herokuapp.restfulbooker;
 
 import org.json.JSONObject;
+import org.testng.annotations.BeforeMethod;
 
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class BaseTest {
 
-	String URL_POST = "https://restful-booker.herokuapp.com/booking/";
+	protected RequestSpecification rspec;
+	
+	@BeforeMethod
+	public void setUp() {	
+		String URL_POST = "https://restful-booker.herokuapp.com/";
+		
+		rspec = new RequestSpecBuilder().setBaseUri(URL_POST).build();
+	}
 	
 	protected Response createBookings() {
 		JSONObject body = new JSONObject();
@@ -25,8 +35,8 @@ public class BaseTest {
 		body.put("bookingdates", bDates);
 		body.put("additionalneeds", "New Whip");
 		
-		Response response = RestAssured.given().contentType(ContentType.JSON).
-				body(body.toString()).post(URL_POST);
+		Response response = RestAssured.given().spec(rspec).contentType(ContentType.JSON).
+				body(body.toString()).post("booking/");
 		
 		return response;
 	}

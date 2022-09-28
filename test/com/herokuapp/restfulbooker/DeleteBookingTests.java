@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class DeleteBookingTests extends BaseTest {
@@ -20,8 +19,8 @@ public class DeleteBookingTests extends BaseTest {
 		System.out.println(bookingId);
 		
 		//authenticate the user delete action
-		Response deleteResponse = RestAssured.given().
-					auth().preemptive().basic("admin","password123").delete(URL_POST + bookingId);
+		Response deleteResponse = RestAssured.given(rspec).
+					auth().preemptive().basic("admin","password123").delete("booking/"+bookingId);
 		
 		int statusCOde = deleteResponse.getStatusCode();
 		
@@ -29,8 +28,8 @@ public class DeleteBookingTests extends BaseTest {
 		Assert.assertEquals(statusCOde, 201, "Status code should be 201 not " + statusCOde);
 		
 		//run some other verifications
-		Response getResponse = RestAssured.get(URL_POST+bookingId);
-		getResponse.print();
+		Response getResponse = RestAssured.given(rspec).get("booking/"+bookingId);
+		//getResponse.print();
 		Assert.assertEquals(getResponse.getBody().asString(), "Not Found", "Content body should not be found!");
 	}
 

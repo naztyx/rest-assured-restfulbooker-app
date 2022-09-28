@@ -35,10 +35,10 @@ public class UpdateBookingTests extends BaseTest  {
 		body.put("bookingdates", bDates);
 		body.put("additionalneeds", "New House");
 		//update the booking
-		Response updateResponse = RestAssured.given().
+		Response updateResponse = RestAssured.given().spec(rspec).
 				auth().preemptive().basic("admin","password123").
 				contentType(ContentType.JSON).
-				body(body.toString()).put(URL_POST + bookingid); 
+				body(body.toString()).put("booking/" + bookingid); 
 		
 		//run verification tests
 		Assert.assertEquals(updateResponse.getStatusCode(), 200, "Status code should return 200!");

@@ -29,10 +29,10 @@ public class PartialUpdateBookingTests extends BaseTest {
 		body.put("bookingdates", bookindates);
 		
 		//authenticate the user input
-		Response updateResponse = RestAssured.given().
+		Response updateResponse = RestAssured.given(rspec).
 				auth().preemptive().basic("admin","password123").
 				contentType(ContentType.JSON).
-				body(body.toString()).patch(URL_POST + bookingId);
+				body(body.toString()).patch("booking/" + bookingId);
 		
 		//verify there's a connection with a statusCode of 200
 		int responsecode = response.getStatusCode();

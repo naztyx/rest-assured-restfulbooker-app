@@ -5,16 +5,21 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class GetBookingsIDWIthFilterExerciseTest {
 	
-	String URL = "https://restful-booker.herokuapp.com/booking/6426";
+	String URL = "https://restful-booker.herokuapp.com/";
 	//String URL = "https://restful-booker.herokuapp.com/booking?firstname=Abiola&lastname=Lamidi";
 	@Test
 	public void getBookingsIDWIthFilterExerciseTest() {
+		
+		RequestSpecification rspec = new RequestSpecBuilder().setBaseUri(URL).build();
+		
 		//get booking ids response for first 10 bookings
-		Response response = RestAssured.get(URL);
+		Response response = RestAssured.given(rspec).get("booking/2382");
 		response.prettyPrint();
 		
 		Assert.assertEquals(response.getStatusCode(), 200, "Status code should return 200!");
@@ -31,12 +36,12 @@ public class GetBookingsIDWIthFilterExerciseTest {
 		String actualNeeds = response.jsonPath().getString("additionalneeds");
 		
 		//cross check all the fields with expected values 
-		sa.assertEquals(actualFName, "Abiola");
-		sa.assertEquals(actualLName, "Lamidi");
+		sa.assertEquals(actualFName, "Sally");
+		sa.assertEquals(actualLName, "Brown");
 		sa.assertEquals(price, 111);
 		sa.assertTrue(actualDPaid);
-		sa.assertEquals(actualCheckin, "2018-01-01");
-		sa.assertEquals(actualCheckout, "2019-01-01");
+		sa.assertEquals(actualCheckin, "2013-02-23");
+		sa.assertEquals(actualCheckout, "2014-10-23");
 		sa.assertEquals(actualNeeds, "Breakfast");
 		
 		//run all the assertions
