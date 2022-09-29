@@ -2,16 +2,16 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-29T05:40:29 WAT" name="Default suite" finished-at="2022-09-29T05:40:34 WAT" duration-ms="5099">
+  <suite started-at="2022-09-29T06:12:47 WAT" name="Default suite" finished-at="2022-09-29T06:12:51 WAT" duration-ms="4147">
     <groups>
     </groups>
-    <test started-at="2022-09-29T05:40:29 WAT" name="Default test" finished-at="2022-09-29T05:40:34 WAT" duration-ms="5099">
+    <test started-at="2022-09-29T06:12:47 WAT" name="Default test" finished-at="2022-09-29T06:12:51 WAT" duration-ms="4147">
       <class name="com.herokuapp.restfulbooker.CreateBookingsTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.CreateBookingsTests@6ef888f6]" started-at="2022-09-29T05:40:29 WAT" name="setUp" finished-at="2022-09-29T05:40:29 WAT" duration-ms="643" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.CreateBookingsTests@6ef888f6]" started-at="2022-09-29T06:12:47 WAT" name="setUp" finished-at="2022-09-29T06:12:47 WAT" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="creatBookingswithPOJO()[pri:0, instance:com.herokuapp.restfulbooker.CreateBookingsTests@6ef888f6]" started-at="2022-09-29T05:40:29 WAT" name="creatBookingswithPOJO" finished-at="2022-09-29T05:40:34 WAT" duration-ms="4405" status="PASS">
+        <test-method signature="creatBookingswithPOJO()[pri:0, instance:com.herokuapp.restfulbooker.CreateBookingsTests@6ef888f6]" started-at="2022-09-29T06:12:47 WAT" name="creatBookingswithPOJO" finished-at="2022-09-29T06:12:51 WAT" duration-ms="3467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatBookingswithPOJO -->

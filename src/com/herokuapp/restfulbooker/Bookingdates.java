@@ -9,6 +9,10 @@ public class Bookingdates {
 		this.checkout = checkout;
 	}
 
+	public Bookingdates() {
+		
+	}
+
 	@Override
 	public String toString() {
 		return "Bookingdates [checkin=" + checkin + ", checkout=" + checkout + "]";
