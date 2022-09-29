@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.herokuapp.restfulbooker.HealthCheckTest">
+      <class name="com.herokuapp.restfulbooker.GetBookingTests">
         <methods>
           <include name="setUp"/>
-          <include name="headersCookies"/>
+          <include name="getBookingsIDWIthFilterExerciseTest"/>
         </methods>
-      </class> <!-- com.herokuapp.restfulbooker.HealthCheckTest -->
+      </class> <!-- com.herokuapp.restfulbooker.GetBookingTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
