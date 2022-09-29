@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-29T00:29:46 WAT" name="Default suite" finished-at="2022-09-29T00:29:50 WAT" duration-ms="4977">
+  <suite started-at="2022-09-29T01:02:11 WAT" name="Default suite" finished-at="2022-09-29T01:02:16 WAT" duration-ms="5087">
     <groups>
     </groups>
-    <test started-at="2022-09-29T00:29:46 WAT" name="Default test" finished-at="2022-09-29T00:29:50 WAT" duration-ms="4977">
+    <test started-at="2022-09-29T01:02:11 WAT" name="Default test" finished-at="2022-09-29T01:02:16 WAT" duration-ms="5087">
       <class name="com.herokuapp.restfulbooker.HealthCheckTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T00:29:46 WAT" name="setUp" finished-at="2022-09-29T00:29:46 WAT" duration-ms="632" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T01:02:11 WAT" name="setUp" finished-at="2022-09-29T01:02:11 WAT" duration-ms="635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="headersCookies()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T00:29:46 WAT" name="headersCookies" finished-at="2022-09-29T00:29:49 WAT" duration-ms="3033" status="PASS">
+        <test-method signature="headersCookies()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T01:02:11 WAT" name="headersCookies" finished-at="2022-09-29T01:02:14 WAT" duration-ms="3169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- headersCookies -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T00:29:49 WAT" name="setUp" finished-at="2022-09-29T00:29:49 WAT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T01:02:14 WAT" name="setUp" finished-at="2022-09-29T01:02:15 WAT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="healthCheckTest()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T00:29:49 WAT" name="healthCheckTest" finished-at="2022-09-29T00:29:50 WAT" duration-ms="1257" status="PASS">
+        <test-method signature="healthCheckTest()[pri:0, instance:com.herokuapp.restfulbooker.HealthCheckTest@6af93788]" started-at="2022-09-29T01:02:15 WAT" name="healthCheckTest" finished-at="2022-09-29T01:02:16 WAT" duration-ms="1224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- healthCheckTest -->
